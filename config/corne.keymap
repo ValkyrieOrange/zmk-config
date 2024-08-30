@@ -9,6 +9,8 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    #define MEH(key) LS(LC(LA(key)));
+
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
@@ -71,7 +73,7 @@
 &kp LC(PRINTSCREEN)  &trans  &trans  &trans  &trans  &trans    &trans  &kp PAGE_UP    &kp UP    &kp HOME   &trans  &trans
 &kp PRINTSCREEN      &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT       &kp DOWN  &kp RIGHT  &trans  &trans
 &kp LA(PRINTSCREEN)  &trans  &trans  &trans  &trans  &trans    &trans  &kp PAGE_DOWN  &trans    &kp END    &trans  &trans
-                                     &trans  &trans  &trans    &trans  &trans         &trans
+                                     &trans  &kp MEH  &trans    &trans  &trans         &trans
             >;
         };
 
