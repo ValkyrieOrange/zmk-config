@@ -68,10 +68,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &trans  &trans  &kp LC(PRINTSCREEN)  &trans    &trans  &kp PAGE_UP    &kp UP    &kp HOME   &trans  &trans
-&trans  &trans  &trans  &trans  &kp PRINTSCREEN      &trans    &trans  &kp LEFT       &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &kp LA(PRINTSCREEN)  &trans    &trans  &kp PAGE_DOWN  &trans    &kp END    &trans  &trans
-                        &trans  &trans               &trans    &trans  &trans         &trans
+&kp LC(PRINTSCREEN)  &trans  &trans  &trans  &trans  &trans    &trans  &kp PAGE_UP    &kp UP    &kp HOME   &trans  &trans
+&kp PRINTSCREEN      &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT       &kp DOWN  &kp RIGHT  &trans  &trans
+&kp LA(PRINTSCREEN)  &trans  &trans  &trans  &trans  &trans    &trans  &kp PAGE_DOWN  &trans    &kp END    &trans  &trans
+                                     &trans  &trans  &trans    &trans  &trans         &trans
             >;
         };
 
