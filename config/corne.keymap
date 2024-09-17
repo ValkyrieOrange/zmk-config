@@ -18,12 +18,16 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
+    combos { compatible = "zmk,combos"; };
 
-        ctrl_delete {
-            bindings = <&kp DEL>;
-            key-positions = <12 39>;
+    behaviors {
+        ctrl_delete: ctrl_delete {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CTRL_DELETE";
+            bindings = <&kp BACKSPACE>, <&kp DEL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
         };
     };
 
