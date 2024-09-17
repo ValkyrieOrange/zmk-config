@@ -22,7 +22,7 @@
         compatible = "zmk,combos";
 
         ctrl_delete {
-            bindings = <&kp DELETE>;
+            bindings = <&kp DEL>;
             key-positions = <12 39>;
         };
     };
@@ -68,9 +68,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LC(PRINTSCREEN)  &trans  &trans  &trans  &trans             &trans    &trans  &kp PAGE_UP    &kp UP    &kp HOME   &trans  &trans
+&kp LC(PRINTSCREEN)  &trans  &trans  &trans  &trans             &trans    &trans  &kp PAGE_UP    &kp UP    &kp HOME   &trans  &kp LG(L)
 &kp PRINTSCREEN      &trans  &trans  &trans  &trans             &trans    &trans  &kp LEFT       &kp DOWN  &kp RIGHT  &trans  &trans
-&kp LA(PRINTSCREEN)  &trans  &trans  &trans  &trans             &trans    &trans  &kp PAGE_DOWN  &trans    &kp END    &trans  &trans
+&kp LA(PRINTSCREEN)  &trans  &trans  &trans  &trans             &trans    &trans  &kp PAGE_DOWN  &trans    &kp END    &trans  &kp LC(LA(DEL))
                                      &trans  &kp LS(LA(LCTRL))  &trans    &trans  &trans         &trans
             >;
         };
