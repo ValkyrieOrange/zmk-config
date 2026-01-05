@@ -36,59 +36,65 @@
 
         default_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+            // |  TAB |  Q  |  W  |  F  |  P  |  G  |           |  J  |  L   |  U  |  Y  |  ;  |   -  |
+            // | CTRL |  A  |  R  |  S  |  T  |  D  |           |  H  |  N   |  E  |  I  |  O  |  '   |
+            // | LGUI |  Z  |  X  |  C  |  V  |  B  |           |  K  |  M   |  ,  |  .  |  /  | ESC  |
+            //                    | LWR |LSHFT| SPC |           | DEL | ENTR | RSE |
 
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F  &kp P           &kp G        &kp J         &kp L      &kp U      &kp Y    &kp SEMI  &kp MINUS
-&kp LCTRL  &kp A  &kp R  &kp S  &kp T           &kp D        &kp H         &kp N      &kp E      &kp I    &kp O     &kp SQT
-&kp LALT   &kp Z  &kp X  &kp C  &kp V           &kp B        &kp K         &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &mo 1  &kp LEFT_SHIFT  &kp SPACE    &ctrl_delete  &kp ENTER  &mo 2
+&kp TAB        &kp Q  &kp W  &kp F  &kp P           &kp G           &kp J         &kp L      &kp U      &kp Y    &kp SEMI  &kp MINUS
+&kp LCTRL      &kp A  &kp R  &kp S  &kp T           &kp D           &kp H         &kp N      &kp E      &kp I    &kp O     &kp SQT
+&kp LEFT_GUI   &kp Z  &kp X  &kp C  &kp V           &kp B           &kp K         &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                             &mo 1  &kp LEFT_SHIFT  &kp SPACE       &ctrl_delete  &kp ENTER  &mo 2
             >;
         };
 
         lower_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+            // |      |  !  |  @  |  #  |  $  |  %  |           |  ^  |  &  |  *  |  (  |  )  |      |
+            // |      |  1  |  2  |  3  |  4  |  5  |           |  6  |  7  |  8  |  9  |  0  |      |
+            // | LALT |  [  |  ]  |  {  |  }  |  `  |           |  ~  |  +  |  =  |  |  |  \  |      |
+            //                    |     |     |     |           |     |     |     |
 
             display-name = "Lower";
             bindings = <
 &trans        &kp LS(EXCL)      &kp LS(AT)         &kp LS(POUND)   &kp LS(DLLR)     &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)   &trans
 &trans        &kp N1            &kp N2             &kp N3          &kp N4           &kp N5           &kp N6         &kp N7        &kp N8        &kp N9        &kp N0         &trans
-&kp LEFT_GUI  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE        &kp TILDE      &kp EQUAL     &kp PLUS      &kp PIPE      &kp BACKSLASH  &kp RIGHT_GUI
+&kp LALT      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE        &kp TILDE      &kp PLUS      &kp EQUAL     &kp PIPE      &kp BACKSLASH  &trans
                                                    &trans          &trans           &trans           &trans         &trans        &trans
             >;
         };
 
         raise_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+            // | LPRNT|     |     |     |     |     |           |     | HME |  UP | END | PUP |      |
+            // | PRNT |     |     |     |     |     |           |     | LFT | DWN | RGT | PDWN|      |
+            // | APRNT|     |     |     |     |     |           |     |     |     |     |     |      |
+            //                    |     |     |     |           |     |     |     |
 
             display-name = "Raise";
             bindings = <
-&kp LC(PRINTSCREEN)  &trans  &trans  &trans  &trans             &trans    &kp LA(LG(B))  &kp PAGE_UP    &kp UP    &kp HOME   &trans         &kp LG(L)
-&kp PRINTSCREEN      &trans  &trans  &trans  &trans             &trans    &trans         &kp LEFT       &kp DOWN  &kp RIGHT  &kp RIGHT_GUI  &kp LS(RIGHT_GUI)
-&kp LA(PRINTSCREEN)  &trans  &trans  &trans  &trans             &trans    &trans         &kp PAGE_DOWN  &trans    &kp END    &trans         &kp LC(LA(DEL))
-                                     &trans  &kp LS(LA(LCTRL))  &trans    &trans         &trans         &trans
+&kp LC(PRINTSCREEN)  &trans  &trans  &trans  &trans  &trans    &trans         &kp HOME       &kp UP    &kp END    &kp PAGE_UP    &trans
+&kp PRINTSCREEN      &trans  &trans  &trans  &trans  &trans    &trans         &kp LEFT       &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &trans
+&kp LA(PRINTSCREEN)  &trans  &trans  &trans  &trans  &trans    &trans         &trans         &trans    &trans     &trans         &trans
+                        &trans  &trans  &trans    &trans         &trans         &trans
             >;
         };
 
         adjust_layer {
+            // -----------------------------------------------------------------------------------------
+            // | BTCLR| B1 | BT2 | BT3 | BT4 | BT5 |            | DC1 | DC2 | DC3 | DC4 | DC5 | BTCLR|
+            // |  F1  |  F2 |  F3 |  F4 |  F5 |  F6 |           |  F7 |  F8 |  F9 | F10 | F11 |  F12 |
+            // |      |     |     |     |     |     |           |     |     |     |     |     |      |
+            //                    |     |     |     |           |     |     |     |
+
             display-name = "Adjust";
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &trans
-&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6         &kp F7         &kp F8         &kp F9         &kp F10        &trans
-&trans  &trans        &trans        &trans        &trans        &trans          &trans         &trans         &trans         &trans         &trans         &bt BT_CLR
-                                    &trans        &trans        &trans          &trans         &trans         &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &bt BT_CLR
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7         &kp F8         &kp F9         &kp F10        &kp F11        &kp F12
+&trans      &trans        &trans        &trans        &trans        &trans          &trans         &trans         &trans         &trans         &trans         &trans
+                                   &trans        &trans        &trans        &trans          &trans         &trans
             >;
         };
 
