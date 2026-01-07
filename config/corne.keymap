@@ -43,10 +43,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp F  &kp P           &kp G           &kp J         &kp L      &kp U      &kp Y    &kp SEMI  &kp MINUS
-&kp LCTRL      &kp A  &kp R  &kp S  &kp T           &kp D           &kp H         &kp N      &kp E      &kp I    &kp O     &kp SQT
-&kp LEFT_GUI   &kp Z  &kp X  &kp C  &kp V           &kp B           &kp K         &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                             &mo 1  &kp LEFT_SHIFT  &kp SPACE       &ctrl_delete  &kp ENTER  &mo 2
+&kp TAB     &kp Q  &kp W  &kp F  &kp P           &kp G           &kp J         &kp L      &kp U      &kp Y    &kp SEMI  &kp MINUS
+&kp LCTRL   &kp A  &kp R  &kp S  &kp T           &kp D           &kp H         &kp N      &kp E      &kp I    &kp O     &kp SQT
+&kp LALT    &kp Z  &kp X  &kp C  &kp V           &kp B           &kp K         &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
+                          &mo 1  &kp LEFT_SHIFT  &kp SPACE       &ctrl_delete  &kp RIGHT_GUI  &mo 2
             >;
         };
 
@@ -59,10 +59,10 @@
 
             display-name = "Lower";
             bindings = <
-&trans        &kp LS(EXCL)      &kp LS(AT)         &kp LS(POUND)   &kp LS(DLLR)     &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)   &trans
-&trans        &kp N1            &kp N2             &kp N3          &kp N4           &kp N5           &kp N6         &kp N7        &kp N8        &kp N9        &kp N0         &trans
-&kp LALT      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE        &kp TILDE      &kp PLUS      &kp EQUAL     &kp PIPE      &kp BACKSLASH  &trans
-                                                   &trans          &trans           &trans           &trans         &trans        &trans
+&kp ESC  &trans  &trans  &trans  &trans  &kp LC(PRINTSCREEN)        &trans         &kp HOME       &kp UP    &kp END    &kp PAGE_UP    &trans
+&trans  &trans  &trans  &trans  &trans  &kp PRINTSCREEN            &trans         &kp LEFT       &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LA(PRINTSCREEN)        &trans         &trans         &trans    &trans     &trans         &trans
+                                     &trans  &trans  &trans                     &trans         &trans         &trans
             >;
         };
 
@@ -75,10 +75,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp LC(PRINTSCREEN)  &trans  &trans  &trans  &trans  &trans    &trans         &kp HOME       &kp UP    &kp END    &kp PAGE_UP    &trans
-&kp PRINTSCREEN      &trans  &trans  &trans  &trans  &trans    &trans         &kp LEFT       &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &trans
-&kp LA(PRINTSCREEN)  &trans  &trans  &trans  &trans  &trans    &trans         &trans         &trans    &trans     &trans         &trans
-                        &trans  &trans  &trans    &trans         &trans         &trans
+&kp ESC        &kp LS(EXCL)      &kp LS(AT)         &kp LS(POUND)   &kp LS(DLLR)     &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)   &trans
+&trans        &kp N1            &kp N2             &kp N3          &kp N4           &kp N5           &kp N6         &kp N7        &kp N8        &kp N9        &kp N0         &trans
+&trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE        &kp TILDE      &kp PLUS      &kp EQUAL     &kp PIPE      &kp BACKSLASH  &trans
+                                                   &trans          &trans           &trans           &trans         &trans        &trans
             >;
         };
 
