@@ -38,8 +38,8 @@
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  F  |  P  |  G  |           |  J  |  L   |  U  |  Y  |  ;  |   -  |
             // | CTRL |  A  |  R  |  S  |  T  |  D  |           |  H  |  N   |  E  |  I  |  O  |  '   |
-            // | LGUI |  Z  |  X  |  C  |  V  |  B  |           |  K  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | LWR |LSHFT| SPC |           | DEL | ENTR | RSE |
+            // | LALT |  Z  |  X  |  C  |  V  |  B  |           |  K  |  M   |  ,  |  .  |  /  | ENTR |
+            //                    | LWR |LSHFT| SPC |           | DEL | RGUI | RSE |
 
             display-name = "Base";
             bindings = <
@@ -51,26 +51,26 @@
         };
 
         lower_layer {
-            // -----------------------------------------------------------------------------------------
-            // |      |  !  |  @  |  #  |  $  |  %  |           |  ^  |  &  |  *  |  (  |  )  |      |
-            // |      |  1  |  2  |  3  |  4  |  5  |           |  6  |  7  |  8  |  9  |  0  |      |
-            // | LALT |  [  |  ]  |  {  |  }  |  `  |           |  ~  |  +  |  =  |  |  |  \  |      |
-            //                    |     |     |     |           |     |     |     |
+            // --------------------------------------------------------------------------------------------------------
+            // | ESC  |      | Num7 | Num8 | Num9 | CTRL PRNT |           |     | HOME |  UP  |  End  |  PGUP |      |
+            // |      | Num0 | Num4 | Num5 | Num6 |  PRNTSCRN |           |     | LEFT | DOWN | Right | PGDWN |      |
+            // |      |      | Num1 | Num2 | Num3 |  ALT PRNT |           |     |      |      |       |       |      |
+            //                      |      |      |           |           |     |      |      |
 
             display-name = "Lower";
             bindings = <
-&kp ESC           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans           &kp LC(PRINTSCREEN)    &trans  &kp HOME  &kp UP    &kp END    &kp PAGE_UP    &trans
-&trans            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans           &kp PRINTSCREEN        &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &trans
-&kp KP_NUMBER_0   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_0  &kp LA(PRINTSCREEN)    &trans  &trans    &trans    &trans     &trans         &trans
-                                                                     &trans  &trans  &trans                 &trans  &trans    &trans
+&kp ESC  &trans          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9 &kp LC(PRINTSCREEN)    &trans  &kp HOME  &kp UP    &kp END    &kp PAGE_UP    &trans
+&trans   &kp KP_NUMBER_0 &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6 &kp PRINTSCREEN        &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &trans
+&trans   &trans          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3 &kp LA(PRINTSCREEN)    &trans  &trans    &trans    &trans     &trans         &trans
+                                                           &trans  &trans  &trans                 &trans  &trans    &trans
             >;
         };
 
         raise_layer {
             // -----------------------------------------------------------------------------------------
-            // | LPRNT|     |     |     |     |     |           |     | HME |  UP | END | PUP |      |
-            // | PRNT |     |     |     |     |     |           |     | LFT | DWN | RGT | PDWN|      |
-            // | APRNT|     |     |     |     |     |           |     |     |     |     |     |      |
+            // |  ESC |  !  |  @  |  #  |  $  |  %  |           |  ^  |  &  |  *  |  (  |  )  |      |
+            // |      |  1  |  2  |  3  |  4  |  5  |           |  6  |  7  |  8  |  9  |  0  |      |
+            // |      |  [  |  ]  |  {  |  }  |  `  |           |  ~  |  +  |  =  |  |  |  \  |      |
             //                    |     |     |     |           |     |     |     |
 
             display-name = "Raise";
