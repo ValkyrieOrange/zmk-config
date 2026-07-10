@@ -52,17 +52,17 @@
 
         lower_layer {
             // --------------------------------------------------------------------------------------------------------
-            // | ESC  |      | Num7 | Num8 | Num9 | CTRL PRNT |           |     | HOME |  UP  |  End  |  PGUP |      |
-            // |      |      | Num4 | Num5 | Num6 |  PRNTSCRN |           |     | LEFT | DOWN | Right | PGDWN |      |
-            // |      | Num0 | Num1 | Num2 | Num3 |  ALT PRNT |           |     |      |      |       |       |      |
+            // | ESC  |      |  7   |  8   |   9  | CTRL PRNT |           |     | HOME |  UP  |  End  |  PGUP |      |
+            // |      |      |  4   |  5   |   6  |  PRNTSCRN |           |     | LEFT | DOWN | Right | PGDWN |      |
+            // |      |   0  |  1   |  2   |   3  |  ALT PRNT |           |     |      |      |       |       |      |
             //                      |      |      |           |           |     |      |      |
 
             display-name = "Lower";
             bindings = <
-&kp ESC  &trans          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9 &kp LC(PRINTSCREEN)    &trans  &kp HOME  &kp UP    &kp END    &kp PAGE_UP    &trans
-&trans   &trans          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6 &kp PRINTSCREEN        &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &trans
-&trans   &kp KP_NUMBER_0 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3 &kp LA(PRINTSCREEN)    &trans  &trans    &trans    &trans     &trans         &trans
-                                                           &trans  &trans  &trans                 &trans  &trans    &trans
+&kp ESC  &trans &kp N7  &kp N8  &kp N9 &kp LC(PRINTSCREEN)    &trans  &kp HOME  &kp UP    &kp END    &kp PAGE_UP    &trans
+&trans   &trans &kp N4  &kp N5  &kp N6 &kp PRINTSCREEN        &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &trans
+&trans   &kp N0 &kp N1  &kp N2  &kp N3 &kp LA(PRINTSCREEN)    &trans  &trans    &trans    &trans     &trans         &trans
+                        &trans  &trans &trans                 &trans  &trans    &trans
             >;
         };
 
